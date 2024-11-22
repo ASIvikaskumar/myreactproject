@@ -1,0 +1,117 @@
+// Variables for colors and font
+$primary-color: #4CAF50;
+$secondary-color: #f4f4f4;
+$button-color: #007bff;
+$button-hover-color: #0056b3;
+$input-border-color: #ccc;
+$input-focus-border-color: #4CAF50;
+$delete-button-color: #e74c3c;
+$delete-button-hover-color: #c0392b;
+
+
+
+
+// Form Styles
+form {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+
+  input[type="text"] {
+    width: 75%;
+    padding: 10px;
+    border: 1px solid $input-border-color;
+    border-radius: 4px;
+    font-size: 16px;
+
+    &:focus {
+      border-color: $input-focus-border-color;
+      outline: none;
+    }
+  }
+
+  button[type="submit"] {
+    width: 20%;
+    padding: 10px;
+    background-color: $primary-color;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+
+    &:hover {
+      background-color: darken($primary-color, 10%);
+    }
+  }
+}
+
+// List Styles
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid $input-border-color;
+
+    &:last-child {
+      border-bottom: none;
+    }
+
+    input[type="checkbox"] {
+      margin-right: 10px;
+      // box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+      box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    }
+
+    span {
+      flex: 1;
+      font-size: 16px;
+      transition: text-decoration 0.3s;
+
+      &.checked {
+        text-decoration: line-through;
+      }
+    }
+
+    button {
+      background-color: $delete-button-color;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      padding: 5px 10px;
+      cursor: pointer;
+      font-size: 14px;
+
+      &:hover {
+        background-color: $delete-button-hover-color;
+      }
+    }
+  }
+}
+
+// Media Query for responsiveness
+// @media (max-width: 768px) {
+//   div {
+//     padding: 15px;
+//   }
+
+//   form {
+//     flex-direction: column;
+//     align-items: stretch;
+//   }
+
+//   input[type="text"], button[type="submit"] {
+//     width: 100%;
+//     margin-bottom: 10px;
+//   }
+
+//   button[type="submit"] {
+//     margin-bottom: 0;
+//   }
+// }
