@@ -1,0 +1,32 @@
+.mainContainer{
+    padding: 20px;
+    max-width: 400px;
+    margin: auto;
+
+    .inputContainer{
+        padding: 10px;
+        width: 70%;
+        margin-right: 10px;
+    }
+
+    .addBtn{
+        padding: 10px;
+    }
+
+    .ulContainer{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 10px;
+        padding: 10px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+    }
+    .delBtn{
+        padding: 5px;
+        background: #f44;
+        color: white;
+        border: none;
+        border-radius: 3px;
+    }
+}

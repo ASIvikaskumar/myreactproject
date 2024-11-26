@@ -16,6 +16,7 @@ const TestProject = () => {
     // Add the entered data to the list when submit is clicked....
     const _handleSubmit = (e) => {
         e.preventDefault();
+        
         if(inputValue.trim()){
             setDataList((prevData) => [...prevData, {id: Date.now(), value: inputValue }]);
             setInputValue('');
