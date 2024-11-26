@@ -5,19 +5,23 @@ const InputSwapper = () => {
     const [inputFieldFirst, setInputFieldFirst] = useState('');
     const [inputFieldSecond, setInputFieldSecond] = useState('');
 
-    const _handleButtonOne = () => {        
-        setInputFieldSecond(inputFieldFirst);
-        setInputFieldFirst('');
+    const _handleButtonOne = () => {       
+
+            setInputFieldSecond(inputFieldFirst);
+            setInputFieldFirst('');
+            
     };
 
-    const _handleButtonTwo = () => {
-        setInputFieldFirst(inputFieldSecond);
-        setInputFieldSecond('');
+    const _handleButtonTwo = () => {      
+
+            setInputFieldFirst(inputFieldSecond);
+            setInputFieldSecond('');
+        
     };
 
   return (
     <div className='mainContainer'>
-        <h1>Police HeadQuarters Jaipur</h1>
+       
 
     <div className='containerFirst'>
         <label>Data First :-</label>
